@@ -1,0 +1,17 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    restart: always
+    expose:
+      - 27017
+    volumes:
+      - mdb:/data/db
+  node:
+    depends_on: [mongo]
+    restart: always
+    build: .
+    ports:
+      - 4280:80
+volumes:
+  mdb:

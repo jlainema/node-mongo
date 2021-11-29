@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>app.js + mongodb</title>
+</head>
+
+<body>
+  <form method="post" action="/value/submit">
+    <label for="name">Value</label>
+    <input type="text" name="name">
+    <input type="submit" value="Submit">
+  </form>
+  <h4>Values:</h4>
+  <ul> <% values.forEach(function(value) { %> <li> <%= value.name %> [<%= value.date %>] </li> <% }); %> </ul>
+</body>
+
+</html>

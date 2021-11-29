@@ -1,0 +1,9 @@
+{
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4",
+    "mongoose": "^5",
+    "ejs": "^3"
+  }
+}
