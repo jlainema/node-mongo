@@ -12,6 +12,6 @@ services:
     restart: always
     build: .
     ports:
-      - 4280:80
+      - 4280:4280
 volumes:
   mdb:
