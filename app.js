@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const port = 80;
+const port = 4280;
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
